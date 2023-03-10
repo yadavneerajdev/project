@@ -1,0 +1,16 @@
+.pro-cont{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-cont{
+    height: 400px;
+    width: 300px;
+    text-align: center;
+}
+
+.img-cont img{
+    object-fit: cover;
+}
