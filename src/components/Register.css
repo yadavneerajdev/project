@@ -3,10 +3,219 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+    background-color: var(--bg-color-secondary-light);
+    /* transform: rotateX(80deg); */
+}
+
+.form{
+    width: 70%;
+    height: 50rem;
+    background-color: var(--bg-color-primary-light);
+    border-radius: 1rem;
+    display: flex;
+    position: relative;
+    /* transition: transform 0.6s;
+    transform-style: preserve-3d; */
+}
+
+.form-toggle{
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 form{
-    background-color: cadetblue;
-    width: 400px;
-    padding: 23px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.form2{
+    z-index: 2;
+    top: 100px;
+}
+
+form{
+    height: inherit;
+    width: 50%;
+    background-image: linear-gradient(to top, #f7f7f7 0%,var(--bg-color-primary) 100%);
+    /* width: 400px; */
+    padding: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: start;
+    transition: .8s ease;
+}
+
+.form-final-cont{
+    width: 70%;
+    height: 50rem;
+    background-color: var(--bg-color-primary-light);
+    border-radius: 1rem;
+    display: flex;
+}
+
+.form1{
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    transform: rotateY(180deg);
+}
+
+.rot{
+    transform: rotateY(180deg);
+}
+
+.rot2{
+    transform: rotateY(360deg);
+}
+
+form h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+label{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.signReg-inp{
+    font-size: 18px;
+    padding: 8px;
+    border: .5px solid rgba(160, 160, 160, 0.315);
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: .5rem;
+}
+
+.forgot-pass{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.signin-btn{
+    background-color: var(--bg-color-button-dark);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: .5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.googleSign-btn{
+    background-color: white;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: .5rem;
+    border: .1px solid rgba(206, 206, 206, 0.562);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sign-up-direct{
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sign-up-direct span{
+    color: var(--bg-color-button-dark);
+}
+
+.login-right{
+    width: 50%;
+    height: inherit;
+    background-color: rgba(0, 255, 255, 0.178);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.model-img{
+    width: 60%;
+}
+
+.cover-div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.11);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius:.5rem;
+}
+
+
+
+
+
+
+
+@media(max-width: 1330px){
+    .login-right{
+        display: none;
+    }
+    .form{
+        height: 40rem;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+@media(max-width: 670px){
+    form{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 600px){
+    label{
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .signReg-inp{
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .forgot-pass{
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .signin-btn{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .googleSign-btn{
+        font-size: 14px;
+        margin: auto;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .sign-up-direct{
+        font-size: 14px;
+    }
+
+    .googleSign-span{
+        display: none;
+    }
 }

@@ -23,13 +23,13 @@ const Carousel = () => {
     <div className="carousel">
         <div className="container" style={{transform: `translateX(-${slideCount * 100}vw)`}}>
             <div className="carousel-item">
-            <img src={example} alt="" />
+            <img className='carousel-banner' src="https://www.kreeva.com/blog/wp-content/uploads/2022/04/1_DESKTOP_BANNER1.jpg" alt="" />
             </div>
             <div className="carousel-item">
-            <img src={example1} alt="" />
+            <img className='carousel-banner' src="https://www.cbazaar.com/blog/wp-content/uploads/2021/03/WP_Blog_Mar30.jpg" alt="" />
             </div>
             <div className="carousel-item">
-            <img src={example} alt="" />
+            <img className='carousel-banner' src={example} alt="" />
             </div>
         </div>
         {/* <button onClick={() => nextSlide()}>prev</button>

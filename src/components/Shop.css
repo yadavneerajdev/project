@@ -1,4 +1,5 @@
 .shop-cont{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr .3fr;
     /* background-color: cadetblue; */
 }

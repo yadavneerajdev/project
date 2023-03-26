@@ -1,20 +1,23 @@
-.content{
-    padding: 20px;
+.shop-content{
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(163, 223, 223);
 }
 
 .card-cont{
     width: 300px;
-    height: 400px;
+    /* height: 600px; */
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    text-align: center;
 }
 
 .shop-content-img{
     height: 300px;
+    margin: 20px 0px;
 }

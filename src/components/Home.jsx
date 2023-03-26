@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
     <Carousel />
-    <Section_1 />
+    {/* <Section_1 /> */}
     </>
   )
 }

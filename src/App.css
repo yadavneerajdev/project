@@ -5,6 +5,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root{
+  --bg-color-primary-light: #f1f2f7;
+  --bg-color-primary-dark: #A4A1B8;
+  --bg-color-secondary-light: #B6B1CD;
+  --bg-color-container-dark: #301896;
+  --bg-color-button-dark: #604E9E;
+  --bg-color-text: #43464A;
+  --bg-color-button-light: #8C7ABD;
+}
+
 .App {
   text-align: center;
 }

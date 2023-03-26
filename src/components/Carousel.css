@@ -7,7 +7,7 @@
 
 .container{
     width: 300vw;
-    height: 89vh;
+    height: 100vh;
     /* transform: translateX(-200vw); */
     transition: 1s ease;
     display: flex;
@@ -15,17 +15,17 @@
 
 .carousel-item{
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: aqua; */
+    background-color: rgb(15, 15, 15);
 }
 
-img{
+.carousel-banner{
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .btn-car{
@@ -46,4 +46,66 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media(max-width: 1200px){
+    .carousel{
+        height: 50vh !important;
+    } 
+    .container{
+        height: 60vh !important;
+        /* background-color: aqua; */
+    }
+    .carousel-item{
+        height: 50vh !important;
+        /* background-color: aqua; */
+    }
+    .carousel-banner{
+        height: 100%;
+    }
+    .btn-left{
+        top: 0%;
+        left: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-right{
+        top: 0%;
+        right: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 520px){
+    .carousel{
+        height: 30vh !important;
+    } 
+    .container{
+        height: 30vh !important;
+        /* background-color: aqua; */
+    }
+    .carousel-item{
+        height: 30vh !important;
+        /* background-color: aqua; */
+    }
+
+    .btn-left{
+        top: 0%;
+        left: 50px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-right{
+        top: 0%;
+        right: 50px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

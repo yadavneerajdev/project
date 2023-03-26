@@ -7,7 +7,7 @@ const Section_1 = () => {
   return (
     <>
         {/* <CustomNav header="epsillonn" link1="Home" link2="About" link3="Shop" link4="Blog" link5="Contacts" link6="Cart" login="Login/Sign up" /> */}
-        <Banner />
+        {/* <Banner /> */}
     </>
   )
 }
